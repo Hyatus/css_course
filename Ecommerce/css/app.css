@@ -1,0 +1,54 @@
+h1 {
+    font-size: 40px;
+    color: black;
+}
+
+h1 span{
+    color: #037bc0;
+}
+
+h2 span{
+    color: darkblue;
+}
+
+
+h2{
+    font-size: 20px;
+    color:cornflowerblue
+}
+
+
+
+
+.navegacion{ 
+
+
+}
+
+.enlace{
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    color:#037bc0;
+}
+
+/*
+nav a{
+    text-transform: uppercase;
+}
+
+.navegacion a{
+    text-transform: lowercase;
+}
+
+#navegacion a{
+    text-transform: capitalize;
+}
+
+Mientras más especifico sea tu selector tiene mayor importancia
+
+nav a:nth-child(3) {
+    text-transform: uppercase;
+    font-size: 25px;
+}/*
+
