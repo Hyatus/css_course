@@ -19,6 +19,10 @@ a {
     margin: 0 auto;
 }
 
+.img{
+    max-width: 100%;
+}
+
 /** Header y navegacion **/
 
 .nombre-sitio{
@@ -36,8 +40,8 @@ a {
 }
 
 .nav-principal {
-    padding: 20px 0;
-    text-align: center;
+    padding: 20px 0; 
+    text-align: center; 
 }
 
 .hero {
@@ -47,7 +51,14 @@ a {
     height: 550px;
 }
 
+/** categorias **/
 
+.listado-categorias{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    column-gap: 20px;
+}
 
 
 
