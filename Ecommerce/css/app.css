@@ -1,54 +1,53 @@
-h1 {
-    font-size: 40px;
+
+/* Le aplica el box-sizing a todo el html */
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+/** Globales **/
+a {
+    text-decoration: none;
     color: black;
 }
 
-h1 span{
-    color: #037bc0;
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-h2 span{
-    color: darkblue;
+/** Header y navegacion **/
+
+.nombre-sitio{
+    margin-top:50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.nombre-sitio span{
+    color: blue;
+}
+
+.contenedor-navegacion{
+    border-top: 1px solid gray;
+}
+
+.nav-principal {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.hero {
+    background-image: url('../img/principal.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
 }
 
 
-h2{
-    font-size: 20px;
-    color:cornflowerblue
-}
 
 
-
-
-.navegacion{ 
-
-
-}
-
-.enlace{
-    text-transform: uppercase;
-    font-weight: bold;
-    text-decoration: none;
-    color:#037bc0;
-}
-
-/*
-nav a{
-    text-transform: uppercase;
-}
-
-.navegacion a{
-    text-transform: lowercase;
-}
-
-#navegacion a{
-    text-transform: capitalize;
-}
-
-Mientras más especifico sea tu selector tiene mayor importancia
-
-nav a:nth-child(3) {
-    text-transform: uppercase;
-    font-size: 25px;
-}/*
 

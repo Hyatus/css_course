@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecommerce - Home</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
@@ -16,19 +17,22 @@
 
     <!-- Tener sólo un h1 por página -->
     <header>
-        <h1> Tienda <span>Muebles</span></h1>
+        <h1 class="nombre-sitio"> Tienda <span>Muebles</span></h1>
     </header>
 
-    <nav class="navegacion">
-         <!-- Enlaces en HTML -->
-        <a class="enlace" href="index.html">Inicio</a>
-        <a class="enlace" href="nosotros.html">Ir a página nosotros </a>
-        <a class="enlace" href="tienda.html">Tienda</a>
-        <a class="enlace" href="blog.html">Blog</a>
-        <a class="enlace" href="galeria.html">Galería</a>
-        <a class="enlace" href="contacto.html">Contacto</a>
-    </nav>
+    <div class="contenedor-navegacion">
+        <nav class="nav-principal contenedor">
+            <!-- Enlaces en HTML -->
+           <a href="index.html">Inicio</a>
+           <a href="nosotros.html">Ir a página nosotros </a>
+           <a href="tienda.html">Tienda</a>
+           <a href="blog.html">Blog</a>
+           <a href="galeria.html">Galería</a>
+           <a href="contacto.html">Contacto</a>
+       </nav>
+    </div>
 
+    <div class="hero"></div>
         
     <section>
         <h2> Categorías de <span>Productos</span></h2>
@@ -47,13 +51,19 @@
     </section>
     
 
-    <section>
+    <section class="sobre-nosotros">
         <div>
             <h2>Sobre Nosotros</h2>
             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ipsam nemo, nulla voluptatibus architecto incidunt soluta tenetur quaerat, explicabo voluptate ipsum odit eaque pariatur! Id assumenda velit amet excepturi vel!</p>
         </div>    
     </section>
 
+    <section class="sobre-empresa">
+        <div>
+            <h2>Sobre Nosotros</h2>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ipsam nemo, nulla voluptatibus architecto incidunt soluta tenetur quaerat, explicabo voluptate ipsum odit eaque pariatur! Id assumenda velit amet excepturi vel!</p>
+        </div>    
+    </section>
 
 
     <main> 
