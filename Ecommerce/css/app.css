@@ -335,3 +335,22 @@ h3{
     width: 60rem;
     margin: 0 auto;
 }
+
+
+/** Galeria **/
+
+.galeria{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 3rem;
+
+}
+
+.galeria img{
+    height: 40rem;
+    width: 50rem;
+    object-fit: cover;
+}
