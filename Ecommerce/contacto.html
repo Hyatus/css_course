@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecommerce - Home</title>
+    <title>Ecommerce - Contacto</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,7 +38,88 @@
     <main class="contenido-principal contenedor"> 
         <!-- Parte principal de nuestro documento -->
         <!-- Solo uno por página -->
-        <h2 class="text-center">Contacto</h2>  
+        <h2 class="text-center">Contacto</h2>
+        <form class="formulario">
+            <fieldset>
+                <legend>Tus Datos</legend>
+                <div class="campo">
+                    <label for="nombre">Nombre</label>
+                    <input id="nombre" type="text" placeholder="Coloca tu nombre">
+                </div>
+                
+                <div class="campo">
+                   <label for="asunto">Asunto</label>
+                    <input id="asunto" type="text" placeholder="Tu asunto">
+                </div>
+                
+                <div class="campo">
+                    <label for="email">Email</label>
+                    <input id="email" type="email" placeholder="Tu Email">
+                </div>
+
+                <div class="campo">
+                    <label for="tel">Telefono</label>
+                    <input id="tel" type="tel" placeholder="Tu Teléfono">
+                </div>
+
+                <div class="campo">
+                    <label for="mensaje">Mensaje</label>
+                    
+                    <textarea name="mensaje" id="mensaje" cols="50" rows="10" placeholder="Escribe tu mensaje"></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>País</legend>
+                <div class="campo">
+                    <label for="pais">País</label>
+                    <select  id="pais">
+                        <!-- atributos: selected -> default
+                                        disabled -> deshabilitar
+                        -->
+                        <option value="">-- Seleccione --</option>
+                        <option value="GT">Guatemala</option>
+                        <option value="MX">México</option>
+                        <option value="SA">El Salvador</option>
+                        <option value="HD">Honduras</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <!-- para que sólo se pueda seleccionar una opción deben tener el mismo name -->
+
+                <!-- El tipo también puede ser checkbox -->
+
+                <!-- El value es la información que se enviará al servidor -->
+
+                <legend>Información Extra</legend>
+                <div class="campo">
+                    <label for="cliente">Cliente</label>
+                    <input type="radio" id="cliente"  name="tipo" value="cliente">
+                </div>
+
+                <div class="campo">
+                    <label for="proveedor">Proveedor</label>
+                    <input type="radio" id="proveedor" name="tipo" value="proveedor">
+                </div>
+
+
+                <div class="campo">
+                    <label for="categoria">Categoria de interés</label>
+                    <input list="categorias" name="categorias">
+                    <datalist id="categorias">
+                            <option value="Cocina">
+                            <option value="Comedor">
+                            <option value="Dormitorios">
+                            <option value="Oficina">
+                    </datalist>
+                </div>
+            </fieldset>
+
+            <input class="btn" type="button" value="Enviar Formulario">
+
+        </form>  
     </main>
 
 
