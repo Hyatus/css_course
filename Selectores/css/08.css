@@ -1,0 +1,7 @@
+/** SELECTOR DE PRIMER NIVEL DE HIJOS**/
+
+/** Busca el primer nivel de hijos - NO PRIMER HIJO! **/
+.admin > div{
+    border: 2px solid red;
+}
+

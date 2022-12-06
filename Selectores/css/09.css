@@ -1,0 +1,7 @@
+/** PRIMER ELEMENTO DESPUÉS **/
+
+.admin div + p{
+    /* El signo más busca el siguiente elemento en el mismo nivel*/
+    border: 1rem solid red;
+}
+

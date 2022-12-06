@@ -1,0 +1,18 @@
+/** SELECTOR DE CLASES ANIDADAS **/
+
+.header .descripcion{
+    color: green;
+
+}
+
+.descripcion{
+    color: blue;
+}
+
+p{
+    color:cornflowerblue;
+}
+
+/* Mientras más específico sea un selector es más probable que el navegador lo tome en cuenta*/
+
+/* Utilzar máximo 3 niveles en las clases anidadas */

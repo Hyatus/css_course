@@ -1,0 +1,19 @@
+/** SELECTORES DE ID **/
+
+#encabezado{
+    text-transform: uppercase;
+    color: green;
+}
+
+.texto{
+    color: cornflowerblue;
+}
+
+
+/* Los id no son reutilizables */
+/* los id tienen una especificidad más alta que las clases */
+
+#encabezado.texto{
+    color: tomato;
+}
+

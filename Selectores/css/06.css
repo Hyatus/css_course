@@ -1,0 +1,10 @@
+/** SELECTOR DE ETIQUETA Y CLASE **/
+
+.texto{
+    background-color: cornflowerblue;
+}
+
+div.texto{
+    background-color: green;
+}
+

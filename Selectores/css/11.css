@@ -1,0 +1,39 @@
+/** PRIMER HIJO DE UNA LISTA **/
+
+ul li:first-child{
+    border: 1px solid red;
+}
+
+ul li:first-of-type{
+    /* Busca el primero que sea un li */
+    border: 1px solid green;
+}
+
+/** ULTIMO HIJO DE UNA LISTA **/
+
+ul li:last-child{
+    border: 1px solid black;
+}
+
+ul li:last-of-type{
+    border: 1px solid tomato;
+    text-transform: uppercase;
+}
+
+/** SELECCIONAR UN ELEMENTO EN ESPECÍFICO **/
+
+/* ul li:nth-child(2),
+ul li:nth-child(5){
+    border: 1px solid green;
+}     */
+
+
+/** 2N + 1 **/
+/** Tambien podemos poner odd o even **/
+ul li:nth-child(2n+1){
+    /* TODOS LOS QUE SEAN IMPARES*/
+    border: 1px solid red;
+}
+
+
+

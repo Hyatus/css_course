@@ -1,0 +1,22 @@
+/** SELECCIONAR 2 CLASES **/
+
+.texto{
+    background-color: red;
+}
+
+.azul{
+    color: blue;
+}
+
+.mayusculas{
+    text-transform: uppercase;
+}
+
+.texto.mayusculas{
+    /* Si estuvieran separados vs code interpreta que la primera clase posee un hijo con la segunda clase */
+    /* Contiene la clase texto y la clase mayusculas */
+    font-size: 10rem;
+}
+
+
+

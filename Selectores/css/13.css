@@ -1,0 +1,11 @@
+/** PRIMER LETRA O PRIMER LINEA **/
+
+.primer-letra::first-letter{
+    font-size: 20rem;
+}
+
+.primer-linea::first-line{
+    /* conforme crece el espacio se integran más palabras */
+    font-size: 4rem;
+}
+

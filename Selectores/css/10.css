@@ -1,0 +1,20 @@
+/** SELECTOR DE ATRIBUTO **/
+
+/* a[href="http://www.google.com"]{
+    color: red;
+} */
+
+/** Agregar rojo a todos los que inicien con http */
+
+a[href^="http"]{
+    color:red;
+}
+
+
+/** Agregar a todos los que finalicen con .com **/
+
+a[href$=".com"]{
+    color:green;
+}
+
+

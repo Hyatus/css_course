@@ -1,0 +1,10 @@
+/** SELECCIONAR TODOS EXCEPTO UNO O UNOS **/
+
+
+/* Aplicar a todos los párrafos excepto al que tiene la clase texto */
+
+/* concatenar varios not **/
+p:not(.texto):not(.oferta){
+    color: red;
+}
+

@@ -1,0 +1,10 @@
+/** SELECTOR DE CLASE **/
+
+
+/* Solamente aplica para los que tengan esa clase*/
+.primer-parrafo{
+    font-size: 4rem;
+    color: red;
+}
+
+
