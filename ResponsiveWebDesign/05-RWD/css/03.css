@@ -1,0 +1,34 @@
+/** DESKTOP FIRST **/
+
+/* Inicias desde el tamaño de escritorio */
+
+.oferta {
+    background-color: #00446e;
+    padding: 2rem;
+    text-align: center;
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+.precio{
+    font-size: 4rem;
+    margin: 0;
+}
+
+/* Importa el orden en que los colocamos */
+
+
+@media(max-width:800px){
+    .oferta{
+        max-width: 40rem;
+    }
+}
+
+@media(max-width: 600px){
+    /* Aplica desde los 0 a los 600 px */
+
+    .oferta{
+        max-width: 100%;
+    }
+
+}

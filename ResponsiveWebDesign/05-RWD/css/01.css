@@ -1,0 +1,44 @@
+/** MEDIA QUERIES **/
+
+
+.oferta{
+    background-color: blue;
+    padding: 2rem;
+    text-align: center;
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+.precio{
+    font-size: 6rem;
+    margin: 0;
+}
+
+/** El siguiente código aplica en condiciones especiales **/
+/* @media print{
+    /cuando alguien quiere imprimir el sitio web /
+    body{
+        background-color: red;
+    }
+}*/
+
+@media (max-width:600px){
+    body{
+        background-color: gray;
+    }
+
+    .oferta{
+        /* reescribe las propiedades no hay necesidad de escribir todo de nuevo*/
+        max-width: 30rem;
+    }
+
+    .precio{
+        font-size: 2rem;
+    }
+
+}
+
+
+
+
+

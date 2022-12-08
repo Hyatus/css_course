@@ -1,0 +1,12 @@
+/** RESPONSIVE CON GRID **/
+
+
+@media (min-width:768px){
+
+    .tres-columnas-grid{
+        display: grid;
+        grid-template-columns:repeat(3,1fr);
+        gap: 2rem;
+    }
+}
+

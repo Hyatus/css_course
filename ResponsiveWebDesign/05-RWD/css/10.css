@@ -1,0 +1,8 @@
+/** IMAGENES RESPONSIVE **/
+
+
+img{
+    max-width: 100%; /* Nunca va a crecer más de su tamaño natural */
+    display: block; /* Quita la separación de abajo de la imagen */
+}
+

@@ -1,0 +1,25 @@
+/** 04 - MEDIA QUERIES ENTRE 2 TAMAÑOS **/
+
+.oferta{
+    background-color: #00446e;
+    padding: 2rem;
+    text-align: center;
+}
+
+.precio{
+    font-size: 6rem;
+    margin:0
+}
+
+
+/* 2 TAMAÑOS EN QUE COMPROBAR */
+/* Amarillo entre 600 y 800 */
+/* Se coloca una coma para 3 condiciones o más */
+@media (min-width:600px) and (max-width:800px), (min-width:1200px){
+    .oferta{
+        background-color: yellow;
+    }
+}
+
+
+
