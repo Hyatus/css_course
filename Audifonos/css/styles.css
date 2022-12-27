@@ -290,16 +290,24 @@ img{
     min-height: 20rem;
     display: flex;
     flex-direction: column;
-    justify-content: center; /** Alinear verticalmente **/
+    justify-content: center;
+    /**Alinearverticalmente**/
     background-repeat: no-repeat;
-                  /** izq->der arriba-abajo **/          
+    /**izq->derarriba-abajo**/
     background-position: 90% center;
     background-size: 15rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    transition-property: transform backgroud-size;
+    transition-duration: .3s;
 }
 
+/** Animando los modelos **/
+.modelo:hover{
+    transform: scale(1.1);/** Crece el 10% **/
+    background-size: 30rem;
+}
 
 
 @media (min-width:992px){
@@ -351,5 +359,84 @@ img{
 
 .modelo-z .precio{
     font-size: 6rem;
+}
+
+
+/** Añadiendo estilos a la sección de NewsLetter ***/
+
+
+.newsletter{
+    background-image: linear-gradient(to bottom,transparent 50%, var(--blanco) 0%), url(../img/newsletter.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    
+}
+
+@media (min-width:768px){
+    .newsletter{
+        background-image: linear-gradient(to right,transparent 50%, var(--blanco) 0%), url(../img/newsletter.jpg);
+        background-position: left center;
+        background-size: 100%, 100rem;
+        padding: 10rem 0;
+    }
+    
+}
+
+
+.contenido-newsletter{
+    display: grid;
+    grid-template-rows: repeat(2,30rem);
+    gap: var(--separacion);
+
+}
+
+@media (min-width:768px){  
+    .contenido-newsletter{
+        grid-template-rows: unset;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+}
+
+
+.texto-newsletter{
+    grid-row: 2/3;
+}
+
+@media (min-width:768px){
+    
+    .texto-newsletter{
+        grid-row: unset;
+        grid-column: 2/3;
+    }
+
+    
+}
+
+.formulario input[type="text"]{
+    width: 100%;
+    padding: 1rem;
+
+}
+
+.formulario input[type="submit"]{
+    width:100%;
+    padding: 2rem;
+    background-color: var(--primario);
+    color: white;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 900;
+    border: none;
+}
+
+
+.footer p{
+    text-align: center;
+    font-family: var(--fuenteSecundaria);
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    color: var(--primario);
+    padding: 3rem 2rem ;
 }
 
