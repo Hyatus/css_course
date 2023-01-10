@@ -221,6 +221,13 @@ img {
 .listado__elemento:hover{
     transform: scale(1.1);
 }
+@media (min-width:768px){
+    .listado__elemento--2col{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
 
 .listado__heading{
     font-size: 3rem;
@@ -238,7 +245,32 @@ img {
 
 .seguridad{
     background-color: var(--primario);
-    padding: 10rem 0;
+    padding: 20rem 0;
+    position: relative;
+    margin: 10rem 0;
+    overflow: hidden;
+}
+
+
+.seguridad::before,
+.seguridad::after{
+    background-color: var(--blanco);
+    content: '';
+    height: 20rem;
+    width: 150%;
+    position: absolute;
+}
+
+.seguridad::before{
+    top: -10rem;
+    left: 0;
+    transform: rotate(3deg);
+}
+
+.seguridad::after{
+    transform: rotate(3deg);
+    bottom: -10rem;
+    left: -1rem;
 }
 
 .seguridad__heading{
@@ -256,4 +288,48 @@ img {
 }
 
 
+
+/** Agregando estilos a las comisiones **/
+
+@media (min-width:768px){
+    .comisiones__grid{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 5rem;
+        align-items: flex-end;
+    }
+    
+}
+
+@media (min-width:998px){
+    .comisiones__grid{
+        align-items: center;
+    }
+}
+
+.comisiones__texto{
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+@media (min-width:768px){
+    .comisiones__texto{
+        text-align: left;
+    }
+}
+
+
+.listado__numero{
+    color: #6834a6;
+    text-align: center;
+    margin: 0;
+
+}
+
+@media (min-width:768px){
+    .listado__numero{
+        margin: 0 2rem;
+    }
+}
 
