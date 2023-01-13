@@ -1,0 +1,24 @@
+{
+  "name": "cafeteria",
+  "version": "1.0.0",
+  "description": "Web Cafeteria",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hyatus",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.57.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "gulp-postcss": "^9.0.1",
+    "postcss": "^8.4.21"
+  },
+  "browserslist": [
+    "IE 10"
+  ]
+}
