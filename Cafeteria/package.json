@@ -17,8 +17,10 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
+    "cssnano": "^5.1.14",
     "gulp-imagemin": "^7.1.0",
     "gulp-postcss": "^9.0.1",
+    "gulp-sourcemaps": "^3.0.0",
     "postcss": "^8.4.21"
   },
   "browserslist": [
