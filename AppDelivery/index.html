@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Delivery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./build/css/app.css">
+</head>
+<body>
+
+    <header class="header contenedor">
+        <div class="header__logo">
+            <img src="build/img/logo.svg" alt="logo DeliveryApp">
+        </div>
+        <nav class="navegacion">
+            <a href="#" class="navegacion__link">Iniciar Sesión</a>
+            <a href="#" class="navegacion__link">Crear cuenta</a>
+            <a href="#" class="navegacion__link navegacion__link--registrar">Registrar Restaurant</a>
+        </nav>
+    </header>
+
+    <section class="contenedor formulario">
+        <div class="formulario__grid">
+            <div class="formulario__contenido">
+                <h2 class="formulario__heading">Encuentra y pide comida de tu restaurante favorito</h2>
+                <form class="formulario__buscar">
+                    <div class="formulario__campo">
+                        <label for="restaurant"class="formulario__label">Restaurant</label>
+                        <input id="restaurant" type="text" class="formulario__input" placeholder="Tacos México">
+                    </div>
+                    <div class="formulario__campo">
+                        <label for="platillo"class="formulario__label">Platillo</label>
+                        <input id="platillo" type="text" class="formulario__input" placeholder="Pizza, Ensalada, Hamburguesa">
+                    </div>
+
+                    <input type="submit" class="formulario__submit" value="Buscar">
+                    
+                </form>
+            </div>
+            <div class="formulario__imagen-contenedor">
+                <img class="formulario__imagen" src="build/img/dibujo_repartidor.svg" alt="Repartidor">
+            </div>
+        </div>
+    </section>
+
+    <section class="pasos">
+        <img src="build\img\wave.svg" alt="imagen wave" class="pasos__wave">
+
+        <div class="pasos__contenido">
+            <h2 class="pasos__heading">¿Cómo funciona? <span class="pasos__heading--descripcion">Tan fácil como 1,2 y 3</span></h2>
+            <div class="pasos__grid contenedor">
+                <div class="pasos__paso">
+                    <img src="build/img/paso_1.png" class="pasos__imagen" alt="img paso1">
+                </div>
+                <div class="pasos__paso">
+                    <img src="build/img/paso_2.png" class="pasos__imagen" alt="img paso2">
+                </div>
+                <div class="pasos__paso">
+                    <img src="build/img/paso_3.png" class="pasos__imagen" alt="img paso3">
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
