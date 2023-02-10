@@ -40,3 +40,14 @@
     gap: $espaciado;
     grid-template-columns: repeat($columnas, 1fr);
 }
+
+@mixin scrollHorizontal{
+    overflow-y: hidden;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    
+    /** el primero hijo **/
+    > *{
+        scroll-snap-align: center; 
+    }
+}
